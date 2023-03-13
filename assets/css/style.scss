@@ -618,7 +618,12 @@ a{
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------acount-------------------------------*/
-
+.container_form_bg{ 
+    background: url(../images/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 .container_form input {
     outline: none;
     border: none;
@@ -629,14 +634,13 @@ a{
     margin-top: 3%;
     align-content: center;
     justify-content: center;
-     background:  rgb(45, 154, 255);
+     background:  rgba(255, 255, 255, 0.604);
      width: 380px;
      z-index: 1;
-     padding: 20px 10px;
+     padding:10px;
     border-radius: 15px;
     font-family:sans-serif ;
 }
-#signup{}
 #login{display: none;}
 .container_form .container-inner{
     z-index: 2;
@@ -645,7 +649,7 @@ a{
     justify-content: center;
     align-items: center;
     /* background: #1f1f2b; */
-    background: #ffffff68;
+    background:  rgba(45, 153, 255, 0.491);
     width: 360px;
     margin-top: 70px;
     border-radius: 15px;
@@ -658,7 +662,8 @@ a{
     height: 30px;
     border-radius: 5px;
     font-size: 17px;
-    padding: 5px;
+    padding: 20px;
+    background-color: #ffffff8a;
 }
 .container_form .item .signup:hover{
     box-shadow: 5px 5px 20px 0 rgba(192, 192, 192, 0.3);
@@ -673,9 +678,9 @@ a{
 .container_form .container-inner .item .btn{
     background: #ffffff;
     border: none;
-    padding: 13px 30px;
+    padding: 10px 35px;
     border-radius: 4px;
-    color: #102770;
+    color: rgba(45, 153, 255, 0.688);
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;
@@ -685,7 +690,7 @@ a{
     transition: .4s all;
 }
 .container_form .container-inner .item .btn:hover{
-    background: rgb(45, 154, 255);
+    background: rgb(74, 167, 255);
     color: #fff;
     box-shadow: 0 2px 20px 0 rgba(255, 234, 167, 0.548);
     cursor: pointer;
@@ -697,15 +702,14 @@ a{
 }
 .container_form .container-top-inner a{
    text-decoration: none;
-   color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
    font-weight: bold;
    font-size: 16px;
    text-transform: uppercase;
 
 }
 .container_form .active{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.692);
-    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.692);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.692);
     font-size: 17px;
 }
 

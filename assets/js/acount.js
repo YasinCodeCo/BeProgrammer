@@ -9,7 +9,7 @@ let text_titel = document.getElementById("text_titel");
 btn_signup.addEventListener("click" , function() {
     login.style.display="none";
     signup.style.display="block";
-    text_titel.innerText="Sign Up";
+    text_titel.innerText="ثبت نام";
     btn_signup.classList.add('active');
     btn_login.classList.remove('active');
 
@@ -18,7 +18,7 @@ btn_signup.addEventListener("click" , function() {
 btn_login.addEventListener("click" , function() {
     login.style.display="block";
     signup.style.display="none";
-    text_titel.innerText="Login";
+    text_titel.innerText="ورود";
     btn_login.classList.add('active');
     btn_signup.classList.remove('active');
 
