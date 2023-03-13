@@ -29,21 +29,16 @@
 } */
 /* font-face --------------------------------------------------------*/
 @font-face {
-  font-family: nazi;
-  src: url(../fonts/Nazanin_Bold.TTF);
-  font-weight: 400;
-}
-@font-face {
-  font-family: nazi;
-  src: url(../fonts/Yekan.ttf);
-  font-weight: 500;
+  font-family: "vazir";
+  src: url("../fonts/fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/vazir.ttf") format("truetype"), url("../fonts/fonts/vazir.woff") format("woff"), url("../fonts/fonts/vazir.woff2") format("woff2"); /* Pretty Modern Browsers */
 }
 /* clear ------------------------------------------------------------*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: nazi;
+  font-family: "vazir";
 }
 
 body {
@@ -247,7 +242,6 @@ a {
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
   cursor: pointer;
-  font-family: "b yekan";
   font-size: 18px;
   font-weight: normal;
   padding: 0 10px;
@@ -355,7 +349,6 @@ a {
 .drop_down_menue > li a {
   font-size: 16px;
   font-weight: normal;
-  font-family: "b yekan";
   display: block;
   padding: 6px 5px;
 }
@@ -417,7 +410,6 @@ a {
   font-weight: bold;
 }
 .service_box .service_desc p {
-  font-family: "b yekan";
   font-size: 16px;
 }
 .service_box .service_desc hr {
@@ -458,7 +450,7 @@ a {
   padding: 2px 15px;
 }
 .items .item_box_body h2 {
-  font-family: nazi, sans-serif;
+  font-family: vazir, sans-serif;
   font-size: 20px;
   text-align: center;
   margin-bottom: 10px;
@@ -480,7 +472,7 @@ a {
 }
 .items .item_box_body .item_span_top, .items .item_box_body .item_span_botton {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .items .item_box_body .item_span_botton span:first-child {
   color: var(--orginal-blue-color);
@@ -489,7 +481,7 @@ a {
   color: rgb(31, 203, 31);
 }
 .items .item_box_body span {
-  font-family: nazi !important;
+  font-family: vazir !important;
   font-size: 20px;
   font-weight: 500;
 }
@@ -537,7 +529,6 @@ a {
 .about_us .about_us_content p {
   margin-bottom: 100px;
   margin-right: 10px;
-  font-family: "b yekan";
   font-size: 16px;
 }
 .about_us .about_us_content .about_us_content_in {
@@ -641,6 +632,109 @@ a {
 .footer-end a {
   text-decoration: none;
   color: rgba(253, 4, 4, 0.616);
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------acount-------------------------------*/
+.container_form input {
+  outline: none;
+  border: none;
+}
+
+.container_form {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 3%;
+  align-content: center;
+  justify-content: center;
+  background: rgb(45, 154, 255);
+  width: 380px;
+  z-index: 1;
+  padding: 20px 10px;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+#login {
+  display: none;
+}
+
+.container_form .container-inner {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: #1f1f2b; */
+  background: rgba(255, 255, 255, 0.4078431373);
+  width: 360px;
+  margin-top: 70px;
+  border-radius: 15px;
+}
+
+.container-inner .item {
+  margin-bottom: 8px;
+}
+
+.container_form .item .signup {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.container_form .item .signup:hover {
+  box-shadow: 5px 5px 20px 0 rgba(192, 192, 192, 0.3);
+}
+
+.container_form .item h2 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.container_form .container-inner .item .btn {
+  background: #ffffff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 4px;
+  color: #102770;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px 0 rgba(255, 235, 167, 0.3);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: 0.4s all;
+}
+
+.container_form .container-inner .item .btn:hover {
+  background: rgb(45, 154, 255);
+  color: #fff;
+  box-shadow: 0 2px 20px 0 rgba(255, 234, 167, 0.548);
+  cursor: pointer;
+}
+
+.container_form .container-top-inner {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container_form .container-top-inner a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.container_form .active {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.692);
+  text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.692);
+  font-size: 17px;
 }
 
 /*-------------------------------------------------------------------*/
