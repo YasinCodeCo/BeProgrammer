@@ -25,3 +25,79 @@
     }
 }
 
+@mixin container_slider{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin sliders{
+    margin: 0 auto;
+    padding: 5px 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    direction: ltr;
+}
+@mixin slider_items{
+    box-sizing: border-box;
+        margin: 1px;
+        width: 350px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 10px;
+        transform: scale(.9);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover{
+        transform: scale(1);
+        }
+}
+@mixin scrollbars{
+    #slider1::-webkit-scrollbar{
+        background-color: rgb(226, 226, 226);
+        height: 5px;
+        // display: none;
+        width: 2px;
+      }
+      #slider1::-webkit-scrollbar-track{
+        --webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.1)
+      }
+      #slider1::-webkit-scrollbar-thumb{
+        background-color:#2d74d9;
+        border: 2px solid 2d74d9;
+        border-radius: 5px;
+      }
+}
+
+
+@mixin btn_right_slids{ margin-left: 15px;}
+@mixin btn_left_slids{ margin-right: 15px;}
+@mixin arrows{
+    color: #2d74d9;
+    cursor: pointer;
+}
+
+
+@mixin scrollbarsss{
+    .slider2::-webkit-scrollbar{
+        background-color: rgb(226, 226, 226);
+        height: 5px;
+        // display: none;
+        width: 2px;
+      }
+      .slider2::-webkit-scrollbar-track{
+        --webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.1)
+      }
+      .slider2::-webkit-scrollbar-thumb{
+        background-color:#2d74d9;
+        border: 2px solid 2d74d9;
+        border-radius: 5px;
+      }
+}

@@ -19,13 +19,14 @@
                 <button id="hamberMenu" ><img id="hamberMenuImg" src="./assets/images/icons/hamberMenuwhite.png" alt="hamberMenu"></button>
                 
                 <div class="logo">
-                    <img src="./assets/images/logo.png" alt="">
+                    <!-- <img src="./assets/images/logo1.png" alt=""> -->
+                    <h2>BeProgrammer</h2>
                  </div>
     
                 <nav class="navbar">
                     <ul>
                         <li><i class="header_icone" style="background: url('./assets/images/icons/homepage.svg') center no-repeat;"></i><a class="active-menu" href="index.html">خانه</a></li>
-                        <li><i class="header_icone" style="background: url('./assets/images/icons/aboutUs.svg') center no-repeat;"></i><a href="#">درباره ما</a></li>
+                        <li><i class="header_icone" style="background: url('./assets/images/icons/aboutUs.svg') center no-repeat;"></i><a href="./pages/aboutUs.html">درباره ما</a></li>
                         <li class="drop_down">
                             <span>سرویس ها</span>
                             <i class="drop_down_icone"></i>
@@ -48,11 +49,15 @@
             </div>
     
         </div>
+
         <div class="search">
-            <input class="search_srch" type="search" name="" placeholder="">
-            <a href="#"><button class="search_btn">کلمه مورد نظر را جستوجو کن</button></a>
-            <div class="clearfix"></div>
+            <input type="text" class="search_input" placeholder="جستوجو کنید">
+            <button class="search_btn">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
+        
+        
 
 
          <!-- header_res -->
@@ -64,11 +69,17 @@
                         <li><a href="#">مقالات</a></li>
 
                     </ul>
-                    <div class="header_res_search">
-                        <input class="search_srch" type="search" name="" placeholder="">
-                        <a href="#"><button class="search_btn"><i class="fas fa-search fa-1x"></i></button></a>
-                        <div class="clearfix"></div>
+                   
+
+                    <div class="search">
+                        <input type="text" class="search_input" placeholder="جستوجو کنید">
+                        <button class="search_btn">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
+
+
+
         </nav>
 
     </section>
@@ -82,7 +93,7 @@
             <div class="div_titel_h3"><h3 class="titel_h3">سرویس ها</h3></div>
             <div class="service_box">
                 <div class="singel_service">
-                    <a href="#">
+                    <a href="./pages/service.html">
                     <img src="./assets/images/B-2.png" alt="">
                     <div class="overlay"></div>
                     <div class="service_desc">
