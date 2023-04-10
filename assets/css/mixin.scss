@@ -101,3 +101,9 @@
         border-radius: 5px;
       }
 }
+
+@mixin centerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
