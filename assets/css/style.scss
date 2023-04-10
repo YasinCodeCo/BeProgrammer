@@ -824,6 +824,7 @@ a{
 
         
     }
+    
     #btn_right_slid3{
         @include btn_right_slids;
        }
@@ -849,6 +850,113 @@ a{
         border-radius: 5px;
       }
 }
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------articles-------------------------------*/
+.all_articles_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px 50px;
+    
+}
+.menu_articles{
+    display: flex;
+    width: 22%;
+    
+    ul{
+        width: 100%;
+        li{
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #cccccc94;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.08);
+            }
+            a{
+                color: #2d74d9;
+                font-size: 18px;
+            }
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+.items_articles{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+    flex-wrap: wrap;
+    cursor: pointer;
+    .item_articles{
+        width: calc(100% / 3 - 25px);
+       @include boxItem;
+        &:hover{
+            transform: scale(1.08);
+        }
+       img{
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .item_content_articles{
+            padding: 15px;
+            h3{}
+            p{
+                margin: 10px 0;
+                text-align: justify;
+            }
+            a{
+                color: #2d74d9;
+            }
+        }
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -863,6 +971,15 @@ a{
 /*----------------------------media query----------------------------*/
 
 @media screen and (max-width: 1100px) {
+    .menu_articles{
+        width: 30%;
+    }
+    .items_articles{
+        width: 70%;
+    }
+    .item_articles{
+        width: calc(100% / 2 - 25px) !important;
+    }
     .about_us_content p{
             margin-bottom: 20px !important;
     }
@@ -881,6 +998,15 @@ a{
     }
 }
 @media screen and (max-width: 820px){
+    .menu_articles{
+        width: 40%;
+    }
+    .items_articles{
+        width: 60%;
+    }
+    .item_articles{
+        width: calc(100% / 1 - 25px) !important;
+    }
     .search{
         display: none;
     }
@@ -916,6 +1042,7 @@ a{
         }
 }
 @media screen and (max-width: 740px){
+    
         .maghaleh_item{
             width: 100% !important;
         }
@@ -937,5 +1064,18 @@ a{
         grid-template-columns: repeat(1,1fr) !important;
     }
 }
-
-
+@media screen and (max-width: 700px){
+.all_articles_content{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.menu_articles{
+    width: 94%;
+}
+.items_articles{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+}
