@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    
+    <div class="main_panel">
+
+        <header>
+              <div class="container">
+                  <div class="panel_head">
+                      
+                          <p>BeProgrammer</p>
+  
+                          <div class="user_name">
+                              <span>نام کاربر</span>
+                              <img src="../assets/images/icons/user-icon.png" alt="" />
+                          </div>
+  
+                  </div>
+              </div>
+        </header>
+  
+        <div class="panel_sidebar">
+             <div class="panel_sidebar_pic">
+              <img src="../assets/images/logo.svg" alt="">
+             </div>
+             <div class="panel_sidebar_menu">
+              <ul>
+                <li><i style="background: url(../assets/images/icons/settings.png) no-repeat center;"></i><a id="panel_btn_HomePageSettings" href="#">تنضیمات صفحه اصلی</a></li>
+                <li><i style="background: url(../assets/images/icons/list.png) no-repeat center;"></i><a href="#">فهرست ها</a></li>
+                <li><i style="background: url(../assets/images/icons/different-squares.png) no-repeat center;"></i><a href="#" id="panel_btn_Categories">دسته ها</a></li>
+                <li><i style="background: url(../assets/images/icons/dollar.png) no-repeat center;"></i><a href="#">حسابداری</a></li>
+                <li><i style="background: url(../assets/images/icons/ecommerce.png) no-repeat center;"></i><a href="#" id="panel_btn_Products">محصولات</a></li>
+                <li><i style="background: url(../assets/images/icons/price-tag.png) no-repeat center;"></i><a href="#">تخفیف ها</a></li>
+                <li><i style="background: url(../assets/images/icons/power-button.png) no-repeat center;height: 20px;"></i><a href="#" style="color:#FF7171;">خروج</a></li>
+              </ul>
+             </div>
+        </div>
+        
+        <div class="panel_sidebar_littel">
+          <img src="../assets/images/logo.svg" alt="">
+  
+          <ul>
+            <li><a href="#"><i style="background: url(../assets/images/icons/settings.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/list.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/different-squares.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/dollar.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/ecommerce.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/price-tag.png) no-repeat center;"></i></a></li>
+            <li><a href="#"><i style="background: url(../assets/images/icons/power-button.png) no-repeat center;height: 20px;"></i></a></li>
+          </ul>
+        </div>
+        
+  
+        <div class="panel_body">
+            <div class="panel_body_content">
+            <div class="div_titel_h3"><h3 class="titel_h3" id="panel_titel">تنضیمات صفحه اصلی</h3></div>
+            
+                
+              <!--تنضیمات صفحه اصلی-->
+              <form id="panel_form_HomePageSettings" action="">
+                <div class="setting_inputs">
+                  <label for="site_title">عنوان سایت</label>
+                  <input type="text" id="site_title" name="siteTitle">
+              </div>
+  
+              <div class="setting_inputs">
+                  <label for="first_color"> انتخاب رنگ اصلی سایت</label>
+                  <input type="color" id="first_color" name="firstColor">
+              </div>
+
+              <div class="setting_inputs">
+                <label for="first_color"> انتخاب رنگ مکمل سایت</label>
+                <input type="color" id="first_color" name="firstColor">
+              </div>
+
+              <div class="setting_inputs">
+                  <label for="site_logo"> انتخاب لوگوی اصلی سایت</label>
+                  <input type="file" id="site_logo" name="siteLogo">
+              </div>
+  
+              <div class="setting_inputs">
+                <label for="site_logo"> انتخاب پس زمینه اصلی سایت</label>
+                <input type="file" id="site_logo" name="siteLogo">
+            </div>
+              <input type="submit" value="ذخیره" class="panel_submit">
+              </form>
+
+              <!--محصولات-->
+              <form id="panel_form_Products" action="">
+                <div class="setting_inputs">
+                    <label for="site_title">عنوان محصول</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                 <div class="setting_inputs">
+                    <label for="site_title">دسته بندی  </label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_title"> تعداد اموزش ها (فیلم ها)</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_title"> مدت زمان اموزش</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_title"> نام مدرس</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_logo"> انتخاب عکس دوره</label>
+                    <input type="file" id="site_logo" name="siteLogo">
+                </div>
+                <div class="setting_inputs">
+                    <label for="site_title">  قیمت دوره</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label class="this_inline_block" for="site_title">رایگان است</label>
+                    <input type="checkbox" id="site_title" name="siteTitle">
+                   </div>
+              <input type="submit" value="ذخیره" class="panel_submit">
+              </form>
+
+              <!--دسته ها-->
+              <form id="panel_form_Categories" action="">
+                   <div class="setting_inputs">
+                    <label for="site_title">عنوان سرویس (دسته)<label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_title"> متن نمایشی</label>
+                    <input type="text" id="site_title" name="siteTitle">
+                   </div>
+                   <div class="setting_inputs">
+                    <label for="site_logo">انتخاب عکس برای نمایش سرویس (دسته) </label>
+                    <input type="file" id="site_logo" name="siteLogo">
+                </div>
+               
+              <input type="submit" value="ذخیره" class="panel_submit">
+              </form>
+            </div>
+        </div>
+  
+      </div>
+
+
+
+
+
+      <script src="../assets/js/panel.js"></script>
+</body>
+</html>
