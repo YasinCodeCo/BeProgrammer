@@ -1513,17 +1513,22 @@ a {
   margin-bottom: 10px;
 }
 
-#panel_form_Products {
-  display: none;
-}
-
-#panel_form_Categories {
-  display: none;
-}
-
 #panel_btn_HomePageSettings {
   font-weight: 900;
   font-size: 20px;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------panel------------------------------*/
+.articles_img {
+  margin: 0 auto;
+  width: 1000px;
+}
+.articles_img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 5px rgba(168, 168, 168, 0.1764705882);
 }
 
 /*-------------------------------------------------------------------*/
