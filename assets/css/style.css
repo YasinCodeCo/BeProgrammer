@@ -765,6 +765,17 @@ a {
 .mini_header .navbar .btn_sin_log {
   top: 5px;
 }
+.mini_header .drop_down_menue {
+  z-index: 111;
+  background-color: #FFF;
+}
+.mini_header .drop_down_menue > li:hover {
+  background-color: var(--orginal-blue-color);
+  transition: all 0.5s ease;
+}
+.mini_header .drop_down_menue > li:hover a {
+  color: #fff;
+}
 
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
@@ -1657,6 +1668,15 @@ a {
   }
 }
 @media screen and (max-width: 700px) {
+  .container_form {
+    margin-top: 50px;
+  }
+  .btn_homepage span {
+    display: none;
+  }
+  .containerEv {
+    padding: 10px 40px 50px 40px;
+  }
   .all_articles_content {
     flex-wrap: wrap;
     align-items: center;

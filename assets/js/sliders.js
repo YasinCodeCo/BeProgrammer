@@ -26,8 +26,10 @@ for(let i=0;i<slider_item.length;i++){
     slider_item[i].addEventListener('mouseover',()=>{
         clearInterval(play)
     })
+    
     slider_item[i].addEventListener('mouseout',()=>{
         return play = setInterval(autoPlay,50)
+        
     })
 }
 
@@ -63,7 +65,7 @@ for(let i=0;i<slider_item2.length;i++){
         clearInterval(play2)
     })
     slider_item2[i].addEventListener('mouseout',()=>{
-        return play2 = setInterval(autoPlay,50)
+        return play2 = setInterval(autoPlay2,50)
     })
 }
 
